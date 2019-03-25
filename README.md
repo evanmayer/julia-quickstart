@@ -1,6 +1,12 @@
 # Welcome
 Welcome to our quick start guide for developing in the [Julia language](https://julialang.org/)! This guide assumes limited prior experience working from a command line, and, of course, no prior experience with the Julia language. Let's get started.
 
+## Quick access
+[A `bash` cheat sheet](https://www.classes.cs.uchicago.edu/archive/2017/winter/51081-1/LabFAQ/introlab/unix_ref_card.pdf)
+
+[A UChicago CS page on UNIX topics](https://www.classes.cs.uchicago.edu/archive/2017/winter/51081-1/LabFAQ/FAQ.html)
+
+
 # Getting access to a command line
 A command line is a text-based interface to file systems and applications on a computer, just like the graphical desktop you're familiar with. It gives you great power (which we need!), at the expense of a modest learning curve and unintuitive interface. There are many command-line interfaces to operating systems, but on this project, we can to try to pick just one to make it easier to help each other when developing. We're shooting for getting everyone access to the widely-used [`bash`](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell. This mean's we'll have a unified set of commands for navigating folders, moving files, editing files, and running applications.
 
@@ -26,7 +32,7 @@ At this point, a [few](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Startup_s
 
 - Type the command `pwd` (short for **print working directory**) and hit `Enter`/`Return` to see the full path to `~` expanded.
 
-- Use the command `ls` (short for **list**) to show the files and directories in the file system hierarchy below your current working directory.
+- Use the command `ls` (short for **list**) to show the files and directories in the file system hierarchy below your current working directory. In UNIX, technically, everything is a file!
 
 ![The cwd and ls commands](https://github.com/evanmayer/julia-quickstart/blob/master/image1.png)
 
@@ -46,6 +52,8 @@ When you do this, you are invoking the text editor application with the filename
 (Note: If you ever see a command and wonder if it has other options, try `man <command>`, short for manual. To quit out of the so-called manpages after reading, press the `Q` key. This is a good skill to have.)
 
 You can use arrow keys to move around and edit text and stuff. You'll probably want to find a better text editor for real work, which you may or may not use from the command line. In `nano`, you can use `Ctrl`+`X` to exit the file, as seen at the bottom of the window.
+
+Now you know where you are, how to see what's around you, and how to open and edit files.
 
 ## How do I move about it?
 
