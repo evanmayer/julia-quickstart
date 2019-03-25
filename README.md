@@ -56,7 +56,7 @@ When you do this, you are invoking the text editor application with the filename
 
 (Note: If you ever see a command and wonder if it has other options, try `man <command>`, short for manual. To quit out of the so-called manpages after reading, press the `Q` key. This is a good skill to have.)
 
-You can use arrow keys to move around and edit text and stuff. You'll probably want to find a better text editor for real work, which you may or may not use from the command line. In `nano`, you can use `Ctrl`+`X` to exit the file, as seen at the bottom of the window.
+You can use arrow keys to move around and edit text and stuff. This probably isn't the first file you'll want to try editing, but it's fine to have a look around. You'll probably want to find a better text editor for real work, which you may or may not invoke from the command line. In `nano`, you can use `Ctrl`+`X` to exit the file, as seen at the bottom of the window.
 
 Now you know where you are, how to see what's around you, and how to open and edit files.
 
