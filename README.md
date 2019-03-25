@@ -46,7 +46,7 @@ In UNIX-like operating systems, files and folders prefixed with a `.` are consid
 
 - Type `ls -a` to show hidden files.
 
-There are probably a lot! `.bashrc` should be among them. Let's have a look at what is inside.
+There are probably a lot! `.bashrc` should be among them. You don't have to list a file with `ls` before you open it, but now that you have confirmed that it does exist, we can have a look at what is inside. 
 
 - Type `nano .bashrc` on Ubuntu or `pico .bashrc` on OS X. 
 
