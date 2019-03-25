@@ -8,8 +8,11 @@ Welcome to our quick start guide for developing in the [Julia language](https://
 
 ## Table of Contents
 -[Getting access to a command line](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#getting-access-to-a-command-line)
+
 -[Moving about the cabin](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#moving-about-the-cabin)
+
 -[How do I move about it?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-do-i-move-about-it)
+
 -[How can I break this thing?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-can-i-break-this-thing)
 
 # Getting access to a command line
