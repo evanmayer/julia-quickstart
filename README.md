@@ -7,13 +7,10 @@ Welcome to our quick start guide for developing in the [Julia language](https://
 [A UChicago CS page on UNIX topics](https://www.classes.cs.uchicago.edu/archive/2017/winter/51081-1/LabFAQ/FAQ.html)
 
 ## Table of Contents
-[Getting access to a command line](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#getting-access-to-a-command-line)
-
-[Moving about the cabin](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#moving-about-the-cabin)
-
-[How do I move about it?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-do-i-move-about-it)
-
-[How can I break this thing?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-can-i-break-this-thing)
+-[Getting access to a command line](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#getting-access-to-a-command-line)
+-[Moving about the cabin](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#moving-about-the-cabin)
+-[How do I move about it?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-do-i-move-about-it)
+-[How can I break this thing?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-can-i-break-this-thing)
 
 # Getting access to a command line
 A command line is a text-based interface to file systems and applications on a computer, just like the graphical desktop you're familiar with. It gives you great power (which we need!), at the expense of a modest learning curve and unintuitive interface. There are many command-line interfaces to operating systems, but on this project, we can to try to pick just one to make it easier to help each other when developing. We're shooting for getting everyone access to the widely-used [`bash`](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell. This mean's we'll have a unified set of commands for navigating folders, moving files, editing files, and running applications.
