@@ -18,7 +18,7 @@ Either way, once you've fired up your Linux OS (I use [Ubuntu](https://www.ubunt
 ## What is in the cabin?
 When you open the terminal, it spits you out onto a screen looking something like this:
 
-![The Ubuntu bash shell prompt](https://raw.githubusercontent.com/evanmayer/julia-quickstart/master/image.png?token=AQaNHztf7hXY20o__JakOLCBvgJ7CNB0ks5cmFz4wA%3D%3D)
+![The Ubuntu bash shell prompt](https://github.com/evanmayer/julia-quickstart/blob/master/image0.png)
 
 The string of characters you see on the left is the **prompt**. It has your username, your domain, a tilde (`~`) as shorthand for the path to the directory you are in, and character (`$`) denoting the end of the prompt. Commands you type appear here.
 
@@ -28,7 +28,7 @@ At this point, a [few](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Startup_s
 
 - Use the command `ls` (short for **list**) to show the files and directories in the file system hierarchy below your current working directory.
 
-![The cwd and ls commands](https://raw.githubusercontent.com/evanmayer/julia-quickstart/master/image1.png?token=AQaNHz7SNSNb1fbrJ5e_9WspjyB1NDUcks5cmF-1wA%3D%3D)
+![The cwd and ls commands](https://github.com/evanmayer/julia-quickstart/blob/master/image1.png)
 
 What gives? Where is `.bashrc`? 
 In UNIX-like operating systems, files and folders prefixed with a `.` are considered hidden. This is done for various reasons, but usually it's so the casual user can't easily break something like this, a terminal startup configuration. In order to see these files, we have to supply an **option** to the `ls` command to modify its behavior. 
@@ -41,7 +41,7 @@ There are probably a lot! `.bashrc` should be among them. Let's have a look at w
 
 When you do this, you are invoking the text editor application with the filename as an **argument**, and it opens your file for viewing/editing. You may also have text editors such as `vim`, Sublime Text, or others installed and available.
 
-![My .bashrc open in nano.](https://raw.githubusercontent.com/evanmayer/julia-quickstart/master/image2.png?token=AQaNHxuEA3y7B3ajaR5Sj2XKCsnp8685ks5cmGQ_wA%3D%3D)
+![My .bashrc open in nano.](https://github.com/evanmayer/julia-quickstart/blob/master/image2.png)
 
 (Note: If you ever see a command and wonder if it has other options, try `man <command>`, short for manual. To quit out of the so-called manpages after reading, press the `Q` key. This is a good skill to have.)
 
