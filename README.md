@@ -67,18 +67,24 @@ To move around the file system, I like to use a command that is often called `cd
 2. `cd .`
 3. `cd ..`
 4. `cd /`
-5. `cd /home/[your username]/`
+5. `cd /home/<username>/`
 6. `cd ../..` 
 7. `cd ~`
 
-[Following the steps.](https://github.com/evanmayer/julia-quickstart/blob/master/image3.png)
+![Following the steps.](https://github.com/evanmayer/julia-quickstart/blob/master/image3.png)
 
 In 1., you are telling `cd` to take you to a directory using a path **relative** to the current working directory. 
+
 In 2., you are doing something that is usually pretty pointless, which is calling `cd` on the **dot** character, `.` that represents the current working directory. You `cd` into the directory you're in. 
+
 In 3., you call `cd` on `..`, which represents the **parent directory**, one above the current one in the directory structure. 
+
 In 4., `cd` takes you to `/`, which represents the **root** of the filesystem, the top level. It has no parent directories, only children.
+
 Action 5. demonstrates the concept of an **absolute path**, the [path](https://en.wikipedia.org/wiki/Path_(computing)) through the file system from the root to the specified directory. It also shows how elements of the directory structure are strung together to create a path: in UNIX-like systems, the path separator is the `/` character (a forward slash).
+
 In 6., we combine concepts from 3. and 5. to go up two directories. Wow!
+
 In 7., we get back to our home dir using the `~` shorthand.
 
 That's mostly it. That's how you move around using `bash`.
@@ -89,9 +95,33 @@ Hoo boy, there are a lot of ways. Some of them are even fun.
 You already know how to edit existing files, so you could do a lot of damage. However, one of the most boring things you could do to break stuff would probably be to move a file so some program can't find it. Instead, let's make our own file.
 
 First, let's give our file a home. The `mkdir` command (sound it out, you can figure out what this one stands for) will create a new directory at the path you give it:
+
 - `mkdir foo`
 - `cd foo`
+
 Now, there are many ways to create a file if one does not exist already. One way is using the `touch` command. See `man touch` for more things `touch` can do. Another way might be to invoke a text editor on a file that doesn't exist, like `nano bar.txt`. Most text editors make the file for you by default.
+
 - `touch bar.txt`
+
 Including the file extension `.txt` isn't necessary to create the file, but some programs expect files with different extensions, so we'll play along. Now verify that the file has been created:
+
 - `ls`
+
+Move it to your home directory using `mv`:
+
+- `mv bar.txt ~/` or `mv bar.txt ../` or `mv bar.txt /home/<username>`
+
+This is simply rearranging how your file system is linked together to tell it the new desired path to your file `bar.txt`.
+
+Now copy it into your dir `foo` using the copy command: `cp [FILENAME] [DESTINATION DIR]`:
+
+- `cp bar.txt foo`
+
+To "delete" a file, the command `rm` is used. [Technically](https://en.wikipedia.org/wiki/Rm_(Unix)), you're telling the OS to [unlink](https://en.wikipedia.org/wiki/Unlink_(Unix)) the file, and that it's okay to destroy the object when all other entities release their references to it. Don't `rm` anything you can't handle losing. This is a good one to run `man rm` on. There are options (`-r`) that allow you to unlink entire portions of your file system in one go by calling `rm` *recursively* on the specified directory and subdirectories. If you [combine it](https://askubuntu.com/questions/670648/what-does-rm-rf-do) with a force option (`-rf`), it will ignore nonexistent files and arguments, **never prompting you for confirmation**. Using this on the wrong directory is a great way to ensure you won't have a good day. Using it on the **root**, `/` is generally protected on most UNIX distros, but it [isn't always](https://superuser.com/questions/312769/how-far-will-you-get-with-an-rm-rf-command)...
+
+We just made a copy of `bar.txt`, so we can delete this one though.
+
+- `rm bar.txt`
+- `ls`
+
+
