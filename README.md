@@ -130,8 +130,8 @@ If you want, you can get rid of that test file and folder:
 
 - `rm -r foo`
 
-That covers a good bit to get you started moving around and interacting with files. There's much more you can do, from scripting with `bash` commands (`bash` is a language of its own), to searching for files and strings within files, assigning values to variables, performing web-based tasks, and automating tasks and actions. Anything you can do on a computer with a desktop, you can find a way to do from the command line. Often, [things may be faster](https://www.gimp.org/tutorials/Basic_Batch/) to do on the command line, especially anything involving a lot of files in distant places, or repetitive actions. 
+That covers a good bit to get you started moving around and interacting with files. There's much more you can do, from reading from and writing to files, with `cat`, `echo`-ing strings and **environment variables**, scripting with `bash` commands (`bash` is a language of its own), to searching for files and strings within files, assigning values to variables, performing web-based tasks, and automating tasks and actions. Anything you can do on a computer with a desktop, you can find a way to do from the command line. Often, [things may be faster](https://www.gimp.org/tutorials/Basic_Batch/) to do on the command line, especially anything involving a lot of files in distant places, or repetitive actions. 
 
-There are plenty of tutorials with [additional content](https://www.tutorialspoint.com/unix/) and [content that is written better](http://people.cs.uchicago.edu/~kaharris/10200/tutorials/unix/), and they cover concepts that you may eventually need.
+There are plenty of tutorials with [more complete content](https://www.tutorialspoint.com/unix/) and [content that is written better](http://people.cs.uchicago.edu/~kaharris/10200/tutorials/unix/), and they cover concepts that you may eventually need.
 
 Let's get to Julia.
