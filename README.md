@@ -124,4 +124,8 @@ We just made a copy of `bar.txt`, so we can delete this one though.
 - `rm bar.txt`
 - `ls`
 
+![The result](https://github.com/evanmayer/julia-quickstart/blob/master/image4.png)
+
+
+
 
