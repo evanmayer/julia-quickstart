@@ -126,6 +126,6 @@ We just made a copy of `bar.txt`, so we can delete this one though.
 
 ![The result](https://github.com/evanmayer/julia-quickstart/blob/master/image4.png)
 
+That covers a good bit to get you started moving around and interacting with files. There's much more you can do, from scripting with `bash` commands (`bash` is a language of its own), to searching for files and strings within files. Anything you can do on a computer with a desktop, you can find a way to do from the command line. Often, [things may be faster](https://www.gimp.org/tutorials/Basic_Batch/) to do on the command line, especially anything involving a lot of files in disparate places, or repetitive actions. 
 
-
-
+Let's get to Julia.
