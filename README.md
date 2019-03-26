@@ -31,7 +31,7 @@ When you open the terminal, it spits you out onto a screen looking something lik
 
 ![The Ubuntu bash shell prompt](https://github.com/evanmayer/julia-quickstart/blob/master/image0.png)
 
-The string of characters you see on the left is the **prompt**. It has your username, your domain, a tilde (`~`) as shorthand for the path to the directory you are in, and character (`$`) denoting the end of the prompt. Commands you type appear here.
+The string of characters you see on the left is the **prompt**. It has your username, your domain, a tilde (`~`) as shorthand for the [path](https://en.wikipedia.org/wiki/Path_(computing)) to the directory you are in, and character (`$`) denoting the end of the prompt. Commands you type appear here.
 
 At this point, a [few](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Startup_scripts) [things](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html#Bash-Startup-Files) have already happened automatically, one of which is the execution of a set of startup scripts. For the kind of shell you just opened, there is one script (a sequence of `bash` commands), and it lives in your `.bashrc` file. It is in `~`, your **home directory**, by default. Let's try to find it. 
 
@@ -61,5 +61,37 @@ You can use arrow keys to move around and edit text and stuff. This probably isn
 Now you know where you are, how to see what's around you, and how to open and edit files.
 
 ## How do I move about it?
+To move around the file system, I like to use a command that is often called `cd` or `chdir`, short for **change directory**. You can do a `help cd` to read the `bash` help info on it, but the syntax usually goes something like `cd [DIRNAME]`, where `DIRNAME` is the name of a directory or a [path](https://en.wikipedia.org/wiki/Path_(computing)) to one. `cd` doesn't work on files. Try these commands, followed by a `pwd`, to see where they take you. Your command prompt usually changes, too.
+
+1. `cd Documents` (or another directory you see with `ls`)
+2. `cd .`
+3. `cd ..`
+4. `cd /`
+5. `cd /home/[your username]/`
+6. `cd ../..` 
+7. `cd ~`
+
+[Following the steps.](https://github.com/evanmayer/julia-quickstart/blob/master/image3.png)
+
+In 1., you are telling `cd` to take you to a directory using a path **relative** to the current working directory. 
+In 2., you are doing something that is usually pretty pointless, which is calling `cd` on the **dot** character, `.` that represents the current working directory. You `cd` into the directory you're in. 
+In 3., you call `cd` on `..`, which represents the **parent directory**, one above the current one in the directory structure. 
+In 4., `cd` takes you to `/`, which represents the **root** of the filesystem, the top level. It has no parent directories, only children.
+Action 5. demonstrates the concept of an **absolute path**, the [path](https://en.wikipedia.org/wiki/Path_(computing)) through the file system from the root to the specified directory. It also shows how elements of the directory structure are strung together to create a path: in UNIX-like systems, the path separator is the `/` character (a forward slash).
+In 6., we combine concepts from 3. and 5. to go up two directories. Wow!
+In 7., we get back to our home dir using the `~` shorthand.
+
+That's mostly it. That's how you move around using `bash`.
 
 ## How can I break this thing?
+Hoo boy, there are a lot of ways. Some of them are even fun.
+
+You already know how to edit existing files, so you could do a lot of damage. However, one of the most boring things you could do to break stuff would probably be to move a file so some program can't find it. Instead, let's make our own file.
+
+First, let's give our file a home. The `mkdir` command (sound it out, you can figure out what this one stands for) will create a new directory at the path you give it:
+- `mkdir foo`
+- `cd foo`
+Now, there are many ways to create a file if one does not exist already. One way is using the `touch` command. See `man touch` for more things `touch` can do. Another way might be to invoke a text editor on a file that doesn't exist, like `nano bar.txt`. Most text editors make the file for you by default.
+- `touch bar.txt`
+Including the file extension `.txt` isn't necessary to create the file, but some programs expect files with different extensions, so we'll play along. Now verify that the file has been created:
+- `ls`
