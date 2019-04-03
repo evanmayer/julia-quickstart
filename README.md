@@ -144,6 +144,6 @@ Head over to the Julia [downloads page](https://julialang.org/downloads/), locat
 
 Once Julia is installed on your machine, you can choose to make starting up the **REPL** (read-execute-print-loop) a little easier. I choose to have my `.bashrc` file prepend the directory containing the Julia binary to my [PATH variable](https://en.wikipedia.org/wiki/PATH_(variable)). This way, I can just type `julia` and have bash take care of finding out where the binary to execute is. At the bottom of my `.bashrc`, I write:
 
-- `export PATH="/home/evanmayer/julia-1.1.0/bin:$PATH"'
+- `export PATH="/home/evanmayer/julia-1.1.0/bin:$PATH"`
 
 ## Run the REPL
