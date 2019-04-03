@@ -11,6 +11,8 @@ Welcome to our quick start guide for developing in the [Julia language](https://
 - [Moving about the cabin](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#moving-about-the-cabin)
 - [How do I move about it?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-do-i-move-about-it)
 - [How can I break this thing?](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#how-can-i-break-this-thing)
+- [Download Julia](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#download-julia)
+- [Run the Julia REPL](https://github.com/evanmayer/julia-quickstart/blob/master/README.md#run-the-repl)
 
 # Getting access to a command line
 A command line is a text-based interface to file systems and applications on a computer, just like the graphical desktop you're familiar with. It gives you great power (which we need!), at the expense of a modest learning curve and unintuitive interface. There are many command-line interfaces to operating systems, but on this project, we can to try to pick just one to make it easier to help each other when developing. We're shooting for getting everyone access to the widely-used [`bash`](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell. This mean's we'll have a unified set of commands for navigating folders, moving files, editing files, and running applications.
@@ -135,3 +137,13 @@ That covers a good bit to get you started moving around and interacting with fil
 There are plenty of tutorials with [more complete content](https://www.tutorialspoint.com/unix/) and [content that is written better](http://people.cs.uchicago.edu/~kaharris/10200/tutorials/unix/), and they cover concepts that you may eventually need.
 
 Let's get to Julia.
+
+# Julia
+## Download Julia
+Head over to the Julia [downloads page](https://julialang.org/downloads/), locate the correct download link for your OS, and get it. If you don't know the procedure for installing on your OS, you can hit [help] to get more comprehensive instructions.
+
+Once Julia is installed on your machine, you can choose to make starting up the **REPL** (read-execute-print-loop) a little easier. I choose to have my `.bashrc` file prepend the directory containing the Julia binary to my [PATH variable](https://en.wikipedia.org/wiki/PATH_(variable)). This way, I can just type `julia` and have bash take care of finding out where the binary to execute is. At the bottom of my `.bashrc`, I write:
+
+- `export PATH="/home/evanmayer/julia-1.1.0/bin:$PATH"'
+
+## Run the REPL
